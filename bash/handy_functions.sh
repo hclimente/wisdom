@@ -1,9 +1,9 @@
 function getscreen {
 	# re-attach a screen by list number (instead of a long name)
 	# or the only available one, if that is the case
-	
+
 	sceenNo=$1
-	
+
 	if [[ -z "$sceenNo" ]]
 		then
 		if [[ 0 -eq `screen -r | cut -f2 | egrep [0-9]+ | wc -l` ]]
@@ -23,4 +23,8 @@ function getscreen {
 			screen -r $screenId
 		fi
 	fi
+}
+
+function ll {
+	tail -n1 $1 | grep -v "==" | sort | uniq -c
 }
