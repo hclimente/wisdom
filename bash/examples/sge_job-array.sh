@@ -4,6 +4,7 @@
 #$ -V 
 #$ -wd /home/hclimente/smartas/
 
+# launch with qsub -t 1-11 -N recurrence-analysis smartas/pipeline/scripts/launcher.sh
 source ~/.bashrc
 wd="/home/hclimente/smartas"
 
