@@ -1,4 +1,4 @@
-
+# color grep output
 alias grep="grep --color"
 
 # a quick way to get out of current directory
@@ -6,9 +6,8 @@ alias ..='cd ..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias .....='cd ../../../../'
-alias .4='cd ../../../../'
-alias .5='cd ../../../../..'
 
+# shorten frequent commands
 alias h='history'
 
 # do not delete / or prompt if deleting more than 3 files at a time #
