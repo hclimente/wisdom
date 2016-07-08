@@ -25,6 +25,13 @@ function getscreen {
 	fi
 }
 
-function ll {
+function tll {
 	tail -n1 $1 | grep -v "==" | sort | uniq -c
+}
+
+function hg {
+	# exectute a particular line from history, passed as argument
+	line=$1
+	command=`history | grep "^ $line " | cut -c25-`
+	eval $command
 }
