@@ -26,7 +26,8 @@ function getscreen {
 }
 
 function tll {
-	tail -n1 $1 | grep -v "==" | sort | uniq -c
+	# display the last line of a bunch of files, after a unique -c
+	tail -n1 $@ | grep -v "==" | grep -v "^$" | sort | uniq -c
 }
 
 function hg {
