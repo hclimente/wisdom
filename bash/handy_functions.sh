@@ -36,3 +36,9 @@ function hg {
 	command=`history | grep "^ $line " | cut -c25-`
 	eval $command
 }
+
+function uqstat {
+	# your unique tasks in queue
+	echo -e "#\tjob-id\tname\tuser\tstate"
+	qstat | tail -n+3 |  sed 's/ \+/\t/g' | cut -f1,3-5 | sort | uniq -c | sed 's/^ \+//'
+}
