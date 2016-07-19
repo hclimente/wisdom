@@ -1,5 +1,9 @@
-1. Get Atom(https://atom.io/)
+# Atom
+## Setup
+
+1. [Get Atom](https://atom.io/)
 2. Install packages
+
 ```
 # basic sublime functions
 apm install open-recent
