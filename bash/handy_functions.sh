@@ -33,7 +33,8 @@ function tll {
 function hg {
 	# exectute a particular line from history, passed as argument
 	line=$1
-	command=`history | grep "^ $line " | cut -c25-`
+	command=`history | grep "^ \+$line " | sed 's/^\ \+[0-9]\+\ \+//g'`
+	echo Executing \`$command\`
 	eval $command
 }
 
