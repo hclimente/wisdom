@@ -37,7 +37,7 @@ p <- grid.arrange(t,g,legend,n,ncol=2,nrow=2, widths=c(1.5,5), heights=c(5,1.5),
                   top=textGrob(paste(gene,niso,tiso,sep=" "),gp=gpar(fontsize=20,font=3)))
 ```
 
-## Tiles with significance
+## Heatmap for fisher's test result
 
 ```{r}
 ggplot() + 
