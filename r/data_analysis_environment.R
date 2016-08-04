@@ -9,3 +9,7 @@ library(tidyr)
 
 # manipulate data
 library(dplyr)
+library(magrittr)
+
+# plot
+library(ggplot2)
