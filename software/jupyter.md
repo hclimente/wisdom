@@ -5,3 +5,5 @@ Follow [Will's tutorial](https://www.linkedin.com/pulse/jupyter-visible-your-hor
 ## Anaconda
 
 [Install R packages from CRAN.](http://ihrke.github.io/conda.html)
+
+A straightforward solution is installing packages from a Jupyter notebook instead of from the R console.
