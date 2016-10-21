@@ -43,3 +43,12 @@ function uqstat {
 	echo -e "#\tjob-id\tname\tuser\tstate"
 	qstat | tail -n+3 |  sed 's/ \+/\t/g' | cut -f1,3-5 | sort | uniq -c | sed 's/^ \+//'
 }
+
+function woe {
+	# warn on end: pop a desktop notification when a command longer than 15s finishes
+	# the notification when disappear when closer or after 2 min
+	# from http://askubuntu.com/questions/409611/desktop-notification-when-long-running-commands-complete
+	start=$(date +%s)
+	"$@"
+	[ $(($(date +%s) - start)) -le 15 ] || notify-send "$(echo $@) finished" "Completed in $(($(date +%s) - start)) seconds"  -t 120000
+}
