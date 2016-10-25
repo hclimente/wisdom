@@ -8,8 +8,8 @@ now = datetime.datetime.now()
 
 parser = argparse.ArgumentParser(description='Get links for reserving rooms at curie')
 parser.add_argument('-d', '--day', dest='weekday', type=int, default = 2, help='Index of the name of the week (Monday = 1; Sunday = 7)')
-parser.add_argument('-m', '--first_month', dest='first_month', type=int, default = now.month, help='First month number.')
-parser.add_argument('-l', '--last_month', dest='last_month', type=int, default = 12, help='Last month number.')
+parser.add_argument('-m', '--first_month', dest='first_month', type=int, default = now.month, help='Index of the starting month (January = 1; December = 12).')
+parser.add_argument('-l', '--last_month', dest='last_month', type=int, default = 12, help='Index of the last month (January = 1; December = 12).')
 parser.add_argument('-y', '--year', dest='year', type=int, default = now.year, help='Year.')
 args = parser.parse_args()
 
