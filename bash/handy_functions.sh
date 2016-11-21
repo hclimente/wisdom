@@ -41,7 +41,7 @@ function hg {
 function uqstat {
 	# your unique tasks in queue
 	echo -e "#\tjob-id\tname\tuser\tstate"
-	qstat | tail -n+3 |  sed 's/ \+/\t/g' | cut -f1,3-5 | sort | uniq -c | sed 's/^ \+//'
+	qstat "$@" | tail -n+3 |  sed 's/ \+/\t/g' | sed 's/^\t//' | cut -f1,3-5 | sort | uniq -c | sed 's/^ \+//'
 }
 
 function woe {
