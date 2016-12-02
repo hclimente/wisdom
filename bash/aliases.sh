@@ -3,8 +3,8 @@ alias grep="grep --color"
 
 # a quick way to get out of current directory
 alias ..='cd ..'
-alias ...='cd ../../../'
-alias ....='cd ../../../../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
 alias .....='cd ../../../../'
 
 # shorten frequent commands
