@@ -1,8 +1,11 @@
 # wisdom
-Accumulated knowledge from a life devoted to coding.
+Accumulated knowledge from a life devoted to science.
 
 ## Notes (eternally on-going effort, take with a grain of salt)
-* [Model selection](notes/model_selection.md)
+
+### Model selection
+* [Hyperparameter optimization](notes/hyperparameter_optimization.md)
+* [Measures](notes/measures.md)
 
 ## Software-specific resources
 * [Atom](software/atom.md)
