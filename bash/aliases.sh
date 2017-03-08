@@ -12,6 +12,7 @@ alias .....='cd ../../../../'
 # shorten frequent commands
 alias h='history'
 alias labnotebook='jupyter notebook --notebook-dir="~/smartas/notebook"'
+alias ll='ls -oath'
 
 # do not delete / or prompt if deleting more than 3 files at a time #
 alias rm='rm -I --preserve-root'
