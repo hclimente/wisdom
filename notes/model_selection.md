@@ -6,25 +6,36 @@ Model selection means choosing the "best" model among a set of competing models.
 
 * Sensitivity: we want all the important parameters.
 * Specificity, parsimony: we favor simpler models, with fewer parameters.
-* Future predictive ability
-* Selection consistency
+* Future predictive ability: how well the model would perform on new data.
+* Selection consistency: model size converges in probability to the true model size.
 
-Usually it is a balance between goodness of fit (how well the model describes the data) and parsimony (to avoid over-fitting). It can be interpreted as the trade-off between bias and variance.
+Usually we consider a trade-off between different terms. (Different approaches take emphasize different dimensions. For instance, cross-validation focuses on future predictive ability.) One example is a balance between goodness of fit (how well the model describes the data) and parsimony (to avoid over-fitting). It can be interpreted as the trade-off between the bias introduced by a model too small and the variance that comes by a model too large. It's worth mentioning that the true model is unbiased and only has the necessary variance.
 
 ## Cross-validation
 
 We split the data in two parts. We train the model using one of them (the "training data"), and test it on the other (the "testing data").
 
-## Information approaches
+## Information approaches/penalized log-likelihood
 
-We want to minimize an information criterion *GIC*:
+If we knew the right subset of features to study, we would just need to maximize the fit to the observed data ie maximize the log-likelihood. Because we do not, we can consider parsimony along with the fit, and maximize the following:
 
-$GIC=\lambda|\theta|-2\hat{L}(\theta,D)$
+$$\hat{L}(X,y,\hat{\theta})-c(\hat{\theta})$$
 
 Where:
 
-* $\lambda$ is a factor controlling the penalty for complexity.
-* $\hat{L}(\theta,D)$ is the likelihood function of the model.
+* $\hat{\theta}$ is a vector of parameters (for linear models,
+this is ($\hat{β}, σ^{2}$)).
+* $\hat{L}(X,y,\hat{\theta})$ is the likelihood function of the model.
+* $c(\hat{\theta})$ is a measurement of model complexity, usually some norm that measures how big \hat{\theta} is.
+
+In general, these measurements take this form:
+
+$$\hat{L}(X,y,\hat{\theta})-\lambda p_{in}$$
+
+Where:
+
+* $\lambda$ is a factor that controls the penalty for complexity.
+* $p_{in}$ is the number of parameters included in the model.
 
 ### Likelihood
 
@@ -32,7 +43,20 @@ The likelihood of a model M is $\hat{L}=p(x|\hat{\theta},M)$. It assumes the dat
 
 ### Akaike Information Criterion
 
+> The AIC of Akaike [1973] is motivated by the Kullback-Leibler discrepancy,
+which (loosely) measures how far a model is from the truth. We assume
+that the population or process from which the data was sampled is governed
+by an unknown, perhaps nonparametric, true likelihood function $f(X,y)$,
+and we want to approximate the unknown $f$ by a model-specific parametric
+likelihood $g(X,y|θ)$. The “discrepancy” between $f$ and $g$, or “information lost”
+by representing $f$ by $g$, is defined as
+> $$KL(f, g) = E(\ln f(x))− E(\ln g(X,y|θ))$$
+
+$E(lnf(x))$ is the same for all the models being compared.
+
 In Akaike Information Criterion (AIC) $\lambda=2$.
+
+$$\hat{L}(X,y,\hat{\theta})-2p_{in}$$
 
 ### Bayesian Information Criterion
 
