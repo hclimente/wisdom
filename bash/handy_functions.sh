@@ -52,3 +52,13 @@ function woe {
 	"$@"
 	[ $(($(date +%s) - start)) -le 15 ] || notify-send "$(echo $@) finished" "Completed in $(($(date +%s) - start)) seconds"  -t 120000
 }
+
+function numcols {
+	head -n1 $1 | sed 's/\t/\n/g' | nl
+}
+
+function tgrep {
+	f=`echo "${@: -1}"`
+	head -n1 $f
+	grep $@
+}
