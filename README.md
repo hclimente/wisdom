@@ -11,4 +11,5 @@ Accumulated knowledge from a life devoted to science.
 * [Atom](software/atom.md)
 * [Git](software/git.md)
 * [Jupyter](software/jupyter.md)
+* [SSH](software/ssh.md)
 * [Zsh](software/zsh.md)
