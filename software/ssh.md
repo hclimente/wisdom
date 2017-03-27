@@ -17,3 +17,7 @@ host.outside$ scp -P 5555 me@localhost:/home/me/whatever/file_to_tranfer.tgz /wh
 
 # enter password again
 ```
+
+## Login without password
+
+Copy the public key in .ssh/id_rsa.pub from your computer to .ssh/authorized_keys in the target.
