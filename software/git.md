@@ -14,3 +14,11 @@ git pull origin master
 git merge test
 git push origin master
 ```
+
+### Custom gitignore global
+
+In bash/gitignore_global there is a list of common patterns I would like git to systematically ignore (based on https://gist.github.com/octocat/9257657).
+
+```
+git config --global core.excludesfile bash/gitignore_global
+```
