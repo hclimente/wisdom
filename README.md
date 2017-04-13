@@ -3,16 +3,16 @@ Accumulated knowledge from a life devoted to science. Eternally on-going effort,
 
 # Biology
 
-* [Breast cancer](notes/brca.md)
+* [Breast cancer](notes/bio/brca.md)
 
 # Machine learning
 ## Model selection
-* [Hyperparameter optimization](notes/hyperparameter_optimization.md)
-* [Measures](notes/measures.md)
+* [Hyperparameter optimization](notes/machine_learning/hyperparameter_optimization.md)
+* [Measures](notes/machine_learning/measures.md)
 
 # Software-specific
-* [Atom](software/atom.md)
-* [Git](software/git.md)
-* [Jupyter](software/jupyter.md)
-* [SSH](software/ssh.md)
-* [Zsh](software/zsh.md)
+* [Atom](notes/software/atom.md)
+* [Git](notes/software/git.md)
+* [Jupyter](notes/software/jupyter.md)
+* [SSH](notes/software/ssh.md)
+* [Zsh](notes/software/zsh.md)
