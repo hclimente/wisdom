@@ -11,3 +11,13 @@
 export SHELL=/bin/zsh
 exec /bin/zsh -l
 ```
+
+## Beautiful style
+
+https://github.com/bhilburn/powerlevel9k
+
+## Good complements
+
+```
+plugins=(git brew common-aliases history osx wd)
+```
