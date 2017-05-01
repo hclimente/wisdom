@@ -2,7 +2,7 @@
 
 Among woman, breast cancer is the second most commonly diagnosed cancer, after nonmelanoma skin cancer. It is also the second leading cause of cancer deaths after lung cancer. It is mostly a women's disease: only about 1% of the diagnosed cases are in men.
 
-Most breast cancers occur after age 50 years.
+Among the most important risk factors for breast cancer we can highlight age, family history, reproductive history, usage of oral contraceptives and exposure to radiation. Most breast cancers occur after age 50 years.
 
 # Breast cancer subtypes
 
@@ -34,7 +34,7 @@ While approximately 5–10% of all patients with breast cancer exhibit a monogen
 * Replication fork stability.
 * Transcription–replication collisions.
 * Mismatch repair.
-* DNA damage signalling, checkpoints and cell death.
+* DNA damage signaling, checkpoints and cell death.
 
 ## GENESIS
 
