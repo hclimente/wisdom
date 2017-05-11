@@ -8,7 +8,7 @@ Accumulated knowledge from a life devoted to science. Eternally on-going effort,
   * [Familial breast cancer](notes/bio/familial_brca.md)
 * [Epistasis](notes/bio/epistasis.md)
 * [Genome-wide Association Studies](notes/bio/gwas.md)
-  * [Missing heritability](notes/bio/missing_heritability.md)
+* [Heritability](notes/bio/heritability.md)
 
 
 # Data analysis
