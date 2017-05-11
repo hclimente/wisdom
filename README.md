@@ -10,17 +10,8 @@ Accumulated knowledge from a life devoted to science. Eternally on-going effort,
 * [Genome-wide Association Studies](notes/bio/gwas.md)
 * [Heritability](notes/bio/heritability.md)
 
-
-# Data analysis
-
-* Stub on [Independent component analysis](notes/data_analysis/independent_component_analysis.md)
-
-# Machine learning
-
-* Stub on [Deep learning](notes/machine_learning/deep_learning.md)
-* Stub on [Linear models](notes/machine_learning/linear_models.md)
-
 ## Model selection
+
 * [Hyperparameter optimization](notes/machine_learning/hyperparameter_optimization.md)
 * [Measures](notes/machine_learning/model_selection_measures.md)
 
@@ -36,6 +27,16 @@ Accumulated knowledge from a life devoted to science. Eternally on-going effort,
 * [Rcpp](notes/software/rcpp.md)
 * [SSH](notes/software/ssh.md)
 * [Zsh](notes/software/zsh.md)
+
+# Stubs
+
+Notes taken on the fly on talks. Dirty, incomplete sketches. Please ignore unless you lost all hope in any other source.
+
+* [Deep learning](notes/machine_learning/deep_learning.md)
+* [Independent component analysis](notes/data_analysis/independent_component_analysis.md)
+* [Linear models](notes/machine_learning/linear_models.md)
+* [RNAseq](notes/bio/rnaseq.md)
+
 
 # Snippets
 
