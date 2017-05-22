@@ -40,4 +40,4 @@ Notes taken on the fly on talks. Dirty, incomplete sketches. Please ignore unles
 
 # Snippets
 
-Some [useful snippets](code) for R and bash.
+Some [useful snippets](https://github.com/hclimente/wisdom/tree/master/code) for R and bash.
