@@ -1,16 +1,14 @@
 # Familial breast cancer
 
-A French doctor, Pierre Paul Broca, reported in the mid-19th century the first case of familial breast cancer. Indeed, his wife acquired breast cancer, as many women in her family had for, at least, 4 generations. The relative risk conferred by a the presence of multiple breast cancers in the family was estimated in 2.7. This cases usually occur in women younger than 50 years, and bilateral primary breast tumors are frequent.
+In the mid-19th century a French medical doctor, Pierre Paul Broca, reported for the first time a case of familial breast cancer. Indeed, his wife acquired breast cancer, as many women in her family had for, at least, 4 generations. Cases of familiar breast cancer usually occur in women younger than 50 years, and bilateral primary breast tumors are frequent. Epidemiological studies later quantified the relative risk conferred by a the presence of multiple breast cancers in the family at 2.7. Moreover, they exhibit a higher likelihood of acquiring triple-negative breast cancer.
 
-It wasn't until the late 20th century that two genes involved in DNA reparation, BRCA1 and BRCA2 were associated with hereditary breast and ovarian cancer (HBOC). BRCA1 and BRCA2 mutations are rare in most populations (1 of 400).
+# Genes involved in familial breast cancer
 
-# Involved genes
+It wasn’t until the late 20th century that two genes involved in DNA repair, BRCA1 and BRCA2, were associated with hereditary breast and ovarian cancer (HBOC). Some mutations in these genes increase the risk of developing breast cancer, giving respectively a 57–65% or 45–55% risk of developing breast cancer by age 70 among women. For that reason, BRCA1 and BRCA2 mutations are rare in most populations (1 of 400).
 
-HBOC follows an autosomal dominant inheritance pattern. Some mutations in BRCA1 and BRCA2 increase the risk of developing breast cancer, giving a 57–65% or 45–55% risk of developing breast cancer by age 70 years among women. Moreover, they exhibit a higher likelihood of acquiring triple-negative breast cancer.
+HBOC follows an autosomal dominant inheritance pattern. While approximately 5–10% of all patients with breast cancer exhibit a monogenic predisposition to breast and ovarian cancer, only about 25% of them harbor BRCA1/2 mutations. Other 23 genes have been associated with familial breast and/or ovarian cancer (Table 1).
 
-While approximately 5–10% of all patients with breast cancer exhibit a monogenic predisposition to breast and ovarian cancer, only ~25% of them harbor BRCA1/2 mutations. Other 23 genes have been associated with familial breast and/or ovarian cancer (Table 1).
-
-Table 1. Overview of HBOC genes: estimated lifetime risk and tumorigenic molecular mechanisms that involves them. Adapted from *Nielsen et al.*
+Table 1. Overview of HBOC genes: estimated lifetime risk of breast cancer (age in years) and tumorogenic molecular mechanisms that involves them: homologous recombination repair (HRR), replication fork stability, transcription–replication collisions, mismatch repair (MMR), DNA damage signaling, checkpoints and cell death, and/or others. Adapted from *Nielsen et al.*
 
 **Gene**|**Breast cancer estimated lifetime risk (age in years)**|**HRR**|**Replication fork stability**|**Transcription–replication collisions**|**MMR**|**DNA damage signaling, checkpoints and cell death**|**Other**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
@@ -47,17 +45,17 @@ Nearly all known HBOC susceptibility genes encode tumor suppressors that partici
 
 ### Homologous recombination repair
 
-Homologous recombination repair pathway (HRR) deals with double strand DNA breaks (DSBs) by using the undamaged chromosome as template for error-free repair. It  After a DSB occurs, the MRN complex (MRE11, RAD50 and NDN) detects and binds the free DNA ends. Then, it promotes DNA damage checkpoint signaling.
+The homologous recombination repair pathway (HRR) deals with double strand DNA breaks by using the undamaged chromosome as template for error-free repair. After a DSB occurs, the MRN complex (MRE11, RAD50 and NDN) detects and binds the free DNA ends. Then, it promotes DNA damage checkpoint signaling.
 
-HRR involves BRCA1, BRCA2 and actually, most of the HBOC genes. Regarding BRCA1, it's hypothesized that acts as a recruitment scaffold, due to it's ability to interact with a wide range of proteins. A deficiency of BRCA1 is linked to the inability to trigger HRR. Mutations in the MRN complex have also been clinically associated to breast cancer, although dubiously so in the case of RAD50 variants. Reassuringly, some other HBOC genes are interactors of MRN complex, BRCA1/2.
+HRR involves BRCA1, BRCA2 and, actually, most of the HBOC genes. Because of its ability to interact with a wide range of proteins, BRCA1 is hypothetized to act as a recruitment scaffold. A deficiency of BRCA1 is linked to the inability to trigger HRR. Mutations in the MRN complex have also been clinically associated to breast cancer, although dubiously so in the case of RAD50 variants. Reassuringly, some other HBOC genes are interactors of the MRN complex and BRCA1/2.
 
 ### Replication fork stability
 
-BRCA1 and BRCA2 protect newly synthesized DNA and promote restart of stalled forks in an HRR-independent manner. In the absence of these proteins, newly synthesized DNA in a stalled fork would get degraded, leading to genome instability and increasing the risk of cancer.
+BRCA1 and BRCA2 protect newly synthesized DNA and promote the restart of stalled forks in an HRR-independent manner. In the absence of these proteins, newly synthesized DNA in a stalled fork would get degraded, leading to genome instability and increasing the risk of cancer.
 
 ### Transcription–replication collisions
 
-Collisions between transcription and replication are emerging as a source of genome instability. Particularly RNA-DNA hybrids called R-loops can form between the nascent transcript and the DNA template. They can lead to double-strand breaks and mutations. Both BRCA1 and BRCA2 participate in the resolution of R-loops, preventing their accumulation. In consequence, BRCA-deficient cells tend to suffer transcriptional stress that leads to genome instability. Nonetheless the relationship between this mechanism and proneness to HBOC is yet to be proven, and the genes involved further investigated.
+Collisions between transcription and replication are emerging as a source of genome instability. In particular, RNA-DNA hybrids called R-loops can form between the nascent transcript and the DNA template. They can lead to double-strand breaks and mutations. Both BRCA1 and BRCA2 participate in the resolution of R-loops, preventing their accumulation. In consequence, BRCA-deficient cells tend to suffer transcriptional stress that leads to genome instability. Nonetheless the relationship between this mechanism and proneness to HBOC is yet to be proven, and the genes involved further investigated.
 
 ### Mismatch repair
 
@@ -74,13 +72,13 @@ Despite the identification of HBOC genes, 52% of the heritability or familial br
 ---
 **iCOGS**
 
-iCOGS is a custom Illumina array designed by four consortia that study genetic susceptibility of three hormone-related cancers: breast ([BCAC](http://ccge.medschl.cam.ac.uk/consortia/bcac/) and [CIMBA](http://ccge.medschl.cam.ac.uk/consortia/cimba/)), ovarian ([OCAC](http://ccge.medschl.cam.ac.uk/consortia/ocac/)) and prostate ([PRACTICAL](http://ccge.medschl.cam.ac.uk/consortia/practical/)). Its explicit purpose is to facile the genotyping in large case-control studies for these tumors. The criteria to include the SNPs was (i) previously associated with cancer ausceptibility or survival; (ii) fine mapping of genomic regions of interest; (iii) associated with cancer-related quantitative traits; (iv) in selected candidate genes or pathways; (v) associated with other cancers. The final array included ~211,000 SNPs.
+iCOGS is a custom Illumina array designed by four consortia that study genetic susceptibility of three hormone-related cancers: breast ([BCAC](http://ccge.medschl.cam.ac.uk/consortia/bcac/) and [CIMBA](http://ccge.medschl.cam.ac.uk/consortia/cimba/)), ovarian ([OCAC](http://ccge.medschl.cam.ac.uk/consortia/ocac/)) and prostate ([PRACTICAL](http://ccge.medschl.cam.ac.uk/consortia/practical/)). Its explicit purpose is to facile the genotyping in large case-control studies for these tumors. The criteria to include the SNPs was (i) previously associated with cancer susceptibility or survival; (ii) fine mapping of genomic regions of interest; (iii) associated with cancer-related quantitative traits; (iv) in selected candidate genes or pathways; (v) associated with other cancers. The final array included ~211,000 SNPs.
 
 ---
 
 ## GENESIS
 
-GENESIS (GENE SISter) is a French project that aims to shed some light into familial breast cancer. Specifically, it focuses on patients that do not show BRCA1/2 mutations.
+GENESIS (GENE SISter) is a French project that aims to shed some light on familial breast cancer. The index cases are patients with a breast cancer affected sister and no BRCA1/2 mutations. The controls are unaffected colleagues and/or friends of the cases. This dataset is specially interesting for us: the heritability of the disease among the cases is not driven by BRCA1/2, but by rarer variants which are enriched in this experimental setting. GENESIS used the iCOGS genotyping platform.
 
 # References
 
