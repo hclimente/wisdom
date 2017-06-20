@@ -2,18 +2,18 @@
 
 > *All models are wrong; some are useful.* Abraham Lincoln
 
-Model selection means choosing the "best" model among a set of competing models. There are several dimensions that we might want to consider; among others:
+Model selection is the problem of choosing the *best* model among a set of competing models. There are several dimensions that can help us define what *best* means, such as:
 
-* Sensitivity: we want all the important parameters.
-* Specificity, parsimony: we favor simpler models, with fewer parameters.
-* Future predictive ability: how well the model would perform on new data.
-* Selection consistency: model size converges in probability to the true model size.
+* Sensitivity: we want all the important parameters to capture all the complexity of the data.
+* Specificity/parsimony: we favor simpler models, with fewer parameters, to avoid overfitting.
+* Future predictive ability: we want the model to generalize well.
+* Selection consistency: the model size converges in probability to the true model size.
 
-Usually we consider a trade-off between different terms. (Different approaches take emphasize different dimensions. For instance, cross-validation focuses on future predictive ability.) One example is a balance between goodness of fit (how well the model describes the data) and parsimony (to avoid over-fitting). It can be interpreted as the trade-off between the bias introduced by a model too small and the variance that comes by a model too large. It's worth mentioning that the true model is unbiased and only has the necessary variance.
+Usually we require a trade-off between different terms. That is because different approaches take emphasize different dimensions: cross-validation, for instance, focuses on future predictive ability. For example, we typically balance goodness of fit (how well the model describes the data) and parsimony (to avoid over-fitting). It can be interpreted as the trade-off between the bias introduced by a model too small and the variance that comes by a model too large. It's worth mentioning that the true model is unbiased and only has the necessary variance.
 
 ## Cross-validation
 
-We split the data in two parts. We train the model using one of them (the "training data"), and test it on the other (the "testing data").
+We split the data in two parts. We train the model using one of them (*training set*), and test it on the other (*testing set*).
 
 ## Information approaches/penalized log-likelihood
 
@@ -80,7 +80,7 @@ $$BIC=−2L(y|x,\hat{\theta}_{M_i})−ln(n)(p_{in}+ 2)$$
 
 When BIC and AIC agree, we can be confident about our model. When they do not, it really depends on our data:
 
-* High $n$: BIC is usually preferred: BIC has a stricter selection criteria, and tends to pick smaller models, while AIC tends to overfit. Additionally BIC is a consistent model selection criteria: if the number of models is finite and the true one is among them, the probability of detecting it will approaches 1 as $n$ approaches infinite.
+* High $n$: BIC is usually preferred: BIC has a stricter selection criteria, and tends to pick smaller models, while AIC tends to overfit. Additionally BIC is a consistent model selection criteria: if the number of models is finite and the true one is among them, the probability of detecting it approaches 1 as $n$ tends to infinite.
 * Small $n$: with the rather modest sample sizes we usually work with, BIC tends to underfit. Also, this nice asymptotic property is based on unrealistic assumptions. In those cases, AIC or AIC<sub>c</sub> are recommended.
 
 ## Adaptative model selections
