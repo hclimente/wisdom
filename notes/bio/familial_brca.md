@@ -69,6 +69,9 @@ Pathways involved in genome maintenance, cell cycle checkpoints and cell death u
 
 Despite the identification of HBOC genes, 52% of the heritability or familial breast cancer remains unexplained: 20% is explained by high penetrance loci and an extra 28% by common variants. We can illustrate this point with the largest genetic association in familial breast cancer so far, carried out in 2013 by Michailidou *et al.*. The study had two steps. In a first stage, 10,052 breast cancer cases and 12,575 controls of European ancestry were genotyped using the iCOGS platform. Through a GWAS, they selected 29,807 SNPs for further examination in a second stage on a larger cohort (45,290 cases and 41,880 controls). Despite estimating that at least 1,000 uncorrelated loci were involved in breast cancer susceptibility, they were only able to get a genome wide significance (p < 5 × 10<sup>−8</sup>) for ~5% of them (41 SNPs). Moreover, the 41 SNPs have low effect sizes (OR <= 1.26). In fact, only 10 of the +1000 candidate SNPs showed an OR > 1.05.
 
+![familial_brca_heritability_explained](../figures/familial_brca_heritability_explained.png)
+Proportion of heritability explained in familial breast cancer. From Rudolph *et al.*.
+
 ---
 **iCOGS**
 
@@ -85,5 +88,6 @@ GENESIS (GENE SISter) is a French project that aims to shed some light on famili
 * Foulkes, W. D. (2008). Inherited Susceptibility to Common Cancers. The New England Journal of Medicine, 359(20), 2143–2153. https://doi.org/10.1056/NEJMra0802968
 * Nielsen, F. C., van Overeem Hansen, T., & Sørensen, C. S. (2016). Hereditary breast and ovarian cancer: new genes in confined pathways. Nature Reviews Cancer, 16(9), 599–612. https://doi.org/10.1038/nrc.2016.
 * Michailidou, K., Hall, P., Gonzalez-Neira, A., Ghoussaini, M., Dennis, J., Milne, R. L., … Easton, D. F. (2013). Large-scale genotyping identifies 41 new loci associated with breast cancer risk. Nature Genetics, 45(4), 353–361. https://doi.org/10.1038/ng.2563
+* Rudolph, A., Chang-claude, J., & Schmidt, M. K. (2016). Gene – environment interaction and risk of breast cancer. British Journal of Cancer, 114(2), 125–133. https://doi.org/10.1038/bjc.2015.439
 * Sakoda, L. C., Jorgenson, E., & Witte, J. S. (2013). Turning of COGS moves forward findings for hormonally mediated cancers. Nature Genetics, 45(4), 345–8. https://doi.org/10.1038/ng.2587
 * Sinilnikova, O. M., Dondon, M.-G., Eon-Marchais, S., Damiola, F., Barjhoux, L., Marcou, M., … Andrieu, N. (2016). GENESIS: a French national resource to study the missing heritability of breast cancer. BMC Cancer, 16(1), 13. https://doi.org/10.1186/s12885-015-2028-9
