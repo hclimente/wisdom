@@ -70,6 +70,7 @@ Pathways involved in genome maintenance, cell cycle checkpoints and cell death u
 Despite the identification of HBOC genes, 52% of the heritability or familial breast cancer remains unexplained: 20% is explained by high penetrance loci and an extra 28% by common variants. We can illustrate this point with the largest genetic association in familial breast cancer so far, carried out in 2013 by Michailidou *et al.*. The study had two steps. In a first stage, 10,052 breast cancer cases and 12,575 controls of European ancestry were genotyped using the iCOGS platform. Through a GWAS, they selected 29,807 SNPs for further examination in a second stage on a larger cohort (45,290 cases and 41,880 controls). Despite estimating that at least 1,000 uncorrelated loci were involved in breast cancer susceptibility, they were only able to get a genome wide significance (p < 5 × 10<sup>−8</sup>) for ~5% of them (41 SNPs). Moreover, the 41 SNPs have low effect sizes (OR <= 1.26). In fact, only 10 of the +1000 candidate SNPs showed an OR > 1.05.
 
 ![familial_brca_heritability_explained](../figures/familial_brca_heritability_explained.png)
+
 Proportion of heritability explained in familial breast cancer. From Rudolph *et al.*.
 
 ---
