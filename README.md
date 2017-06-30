@@ -4,16 +4,25 @@ Accumulated knowledge from a life devoted to science. Eternally on-going effort,
 
 # Biology
 
+## Cancer
+
 * [Breast cancer](notes/bio/brca.md)
   * [Familial breast cancer](notes/bio/familial_brca.md)
+* [Genetics of cancer](notes/bio/cancer_genetics.md)
+
+## Genetics
+
 * [Epistasis](notes/bio/epistasis.md)
 * [Genome-wide Association Studies](notes/bio/gwas.md)
 * [Heritability](notes/bio/heritability.md)
 
+# Machine learning
+
 ## Model selection
 
 * [Hyperparameter optimization](notes/machine_learning/hyperparameter_optimization.md)
-* [Measures](notes/machine_learning/model_selection_measures.md)
+* [Model selection measures](notes/machine_learning/model_selection_measures.md)
+* [Feature selection](notes/machine_learning/feature_selection.md)
 
 ## Networks
 
@@ -24,7 +33,7 @@ Accumulated knowledge from a life devoted to science. Eternally on-going effort,
 * [Atom](notes/software/atom.md)
 * [Git](notes/software/git.md)
 * [Jupyter](notes/software/jupyter.md)
-* [Rcpp](notes/software/rcpp.md)
+* [R packages](notes/software/rpackages.md)
 * [SSH](notes/software/ssh.md)
 * [Zsh](notes/software/zsh.md)
 
