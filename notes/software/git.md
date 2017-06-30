@@ -43,6 +43,33 @@ git config --global core.excludesfile bash/gitignore_global
 
 Submodules are a way for a git repository to include other git repositories, specifically a commit. When that repository is changed, we can pull, switch branches, etc. and save the new status of the submodules.
 
+### Adding a submodule
+
+```
+git submodule add ssh://git@github.com/USER/PROJECT.git
+```
+
+### Handling a submodule
+
+Submodules are just like any other git repository, so they accept any operation you would expect. However, as stated above, they point at a specific commit. So no matter what changes you do, just commit them and make sure the repository is checked-out at it.
+
+### Downloading repository with all its Submodules
+
+```
+git clone --recursive ssh://git@github.com/USER/PROJECT.git
+```
+
+### Removing a submodule
+
+Solution proposed by [CodeWizard](https://stackoverflow.com/questions/29850029/what-is-the-current-way-to-remove-a-git-submodule):
+
+```
+git submodule deinit REPO/PATH
+git rm REPO/PATH
+git rm --cached REPO/PATH
+rm -rf .git/modules/REPO/PATH
+```
+
 # Remote repository
 
 ## Change remote URL
