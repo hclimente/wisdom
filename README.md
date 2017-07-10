@@ -31,10 +31,12 @@ Accumulated knowledge from a life devoted to science. Eternally on-going effort,
 # Software
 
 * [Atom](notes/software/atom.md)
+* [C++](notes/software/cpp.md)
 * [Git](notes/software/git.md)
 * [Jupyter](notes/software/jupyter.md)
 * [R packages](notes/software/rpackages.md)
 * [SSH](notes/software/ssh.md)
+* [Testing](notes/software/testing.md)
 * [Zsh](notes/software/zsh.md)
 
 # Stubs
