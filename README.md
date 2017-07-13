@@ -10,11 +10,11 @@ Articles marked with \[Stub!\] are articles taken on the fly on talks. Dirty, in
 
 * [Breast cancer](notes/bio/brca.md)
   * [Familial breast cancer](notes/bio/familial_brca.md)
-* [Genetics of cancer](notes/bio/cancer_genetics.md)
+* [\[Stub!\] Genetics of cancer](notes/bio/cancer_genetics.md)
 
 ## Genetics
 
-* [Epistasis](notes/bio/epistasis.md)
+* [\[Stub!\] Epistasis](notes/bio/epistasis.md)
 * [Genome-wide Association Studies](notes/bio/gwas.md)
 * [Heritability](notes/bio/heritability.md)
 * [Population structure](notes/bio/population_structure.md)
