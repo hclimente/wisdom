@@ -8,10 +8,15 @@ The basic structure of the directory is as follows:
 * NAMESPACE
 * R
 * man
+* [vignettes]
 
 ## DESCRIPTION
 
 [DESCRIPTION](http://r-pkgs.had.co.nz/description.html) is the file that contains the important metadata of the package.
+
+## vignettes
+
+
 
 # Testing
 
@@ -111,3 +116,5 @@ We can interactively debug the C/C++ code through the following steps:
 * R packages by Hadley Wickham, specifically:
   * [Compiled code](http://r-pkgs.had.co.nz/src.html)
   * [Testing](http://r-pkgs.had.co.nz/tests.html)
+  * [Vignettes](http://r-pkgs.had.co.nz/vignettes.html)
+* [Jeff Leek approach to R packages philosophy and development](https://github.com/jtleek/rpackages)

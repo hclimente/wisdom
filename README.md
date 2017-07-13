@@ -2,6 +2,8 @@
 
 Accumulated knowledge from a life devoted to science. Eternally on-going effort, take with a grain of salt.
 
+Articles marked with \[Stub!\] are articles taken on the fly on talks. Dirty, incomplete sketches. Please ignore unless you lost all hope in any other source.
+
 # Biology
 
 ## Cancer
@@ -15,8 +17,14 @@ Accumulated knowledge from a life devoted to science. Eternally on-going effort,
 * [Epistasis](notes/bio/epistasis.md)
 * [Genome-wide Association Studies](notes/bio/gwas.md)
 * [Heritability](notes/bio/heritability.md)
+* [Population structure](notes/bio/population_structure.md)
+* [\[Stub!\] RNAseq](notes/bio/rnaseq.md)
 
 # Machine learning
+
+* [\[Stub!\] Deep learning](notes/machine_learning/deep_learning.md)
+* [\[Stub!\] Independent component analysis](notes/data_analysis/independent_component_analysis.md)
+* [\[Stub!\] Linear models](notes/machine_learning/linear_models.md)
 
 ## Model selection
 
@@ -38,16 +46,6 @@ Accumulated knowledge from a life devoted to science. Eternally on-going effort,
 * [SSH](notes/software/ssh.md)
 * [Testing](notes/software/testing.md)
 * [Zsh](notes/software/zsh.md)
-
-# Stubs
-
-Notes taken on the fly on talks. Dirty, incomplete sketches. Please ignore unless you lost all hope in any other source.
-
-* [Deep learning](notes/machine_learning/deep_learning.md)
-* [Independent component analysis](notes/data_analysis/independent_component_analysis.md)
-* [Linear models](notes/machine_learning/linear_models.md)
-* [RNAseq](notes/bio/rnaseq.md)
-
 
 # Snippets
 

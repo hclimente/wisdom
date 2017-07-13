@@ -1,6 +1,12 @@
 # Hyperparameter optimization
 
-Hyperparameter optimization or model selection is the problem of choosing a set of hyperparameters for a learning algorithm, usually with the goal of optimizing a measure of the algorithm's performance on an independent data set.
+Hyperparameter optimization or model selection is the problem of choosing a set of hyperparameters for a learning algorithm, usually with the goal of optimizing a measure of the algorithm's performance on an independent data set. A serach consists of:
+
+* An estimator
+* A parameter space
+* A method for searching or sampling candidates
+* A cross-validation scheme
+* A score function (see [model selection measures](model_selection_measures.md))
 
 * Grid search:  exhaustive searching through a manually specified subset of the hyperparameter space of a learning algorithm.
 * Bayesian optimization: develop a statistical model of the function from hyperparameter values to the objective evaluated on a validation set.
