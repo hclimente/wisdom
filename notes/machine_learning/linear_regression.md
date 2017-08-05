@@ -1,5 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
 Linear regression models assume that the output variable $Y$ can be explained (or reasonably approximated) as a linear combination of the input vector $X$:
 
 $$f(X) = \beta_0 + \sum_{j=1}^pX_j\beta_j$$
