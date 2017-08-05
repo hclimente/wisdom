@@ -1,3 +1,6 @@
+title: "Linear regression"
+use_math: true
+
 Linear regression models assume that the output variable $Y$ can be explained (or reasonably approximated) as a linear combination of the input vector $X$:
 
 $$f(X) = \beta_0 + \sum_{j=1}^pX_j\beta_j$$
