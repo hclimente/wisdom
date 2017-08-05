@@ -1,3 +1,21 @@
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 $X$ is a vector $X^T=(X_1, X_2,...,X_p)$).
 
 $\textbf{X}$ is the $N \times (p+1)$ matrix, with each row an input vector with a 1 in the first positions. It is composed by column vectors $\textbf x_0$, $\textbf x_1$, ..., $\textbf x_p$.
