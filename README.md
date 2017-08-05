@@ -25,6 +25,8 @@ Articles marked with \[Stub!\] are articles taken on the fly on talks. Dirty, in
 * [\[Stub!\] Deep learning](notes/machine_learning/deep_learning.md)
 * [\[Stub!\] Independent component analysis](notes/data_analysis/independent_component_analysis.md)
 * [\[Stub!\] Linear models](notes/machine_learning/linear_models.md)
+* [\[Stub!\] Linear regression](notes/machine_learning/linear_regression.md)
+* [Glossary of Maths things](notes/machine_learning/glossary.md)
 
 ## Model selection
 
@@ -34,7 +36,7 @@ Articles marked with \[Stub!\] are articles taken on the fly on talks. Dirty, in
 
 ## Networks
 
-* [Network-based biomarker discovery](notes/machine_learning/network_biomarker_discovery.md)
+* [Network-based biomarker discovery](notes/bio/systems_biology.md)
 
 # Software
 
