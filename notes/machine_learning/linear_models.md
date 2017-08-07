@@ -109,10 +109,6 @@ Here we present methods that couple variable *subset selection* with linear regr
 - Forward- and backward-stepwise selection: these are heuristic approaches to the problem of subset selection with high $p$. In forward-stepwise selection we start with an intercept at $\bar y$, and sequentially add the variable that best improves the fit. In the other end, backward-stepwise selection starts with the full model, and sequentially deletes the predictor that has least impact on the fit. In both cases, we end up with a sequence of models of different sizes $k$ that we need to study.
 - Forward stagewise selection: it also starts with the intercept, and iteratively, finds the variable most correlated with the current residual. Then, it fits a linear regression of the residual to this variable and the coefficient is added to the model. As opposed to forward-stepwise selection, the coefficients of the rest of the variables are not changed when a new one is added. These steps are repeated until no more variables are correlated with the residuals. Forward stagewise selection is slower, but might present advantages in high dimensional settings.
 
-# Open question
-
-* What's the variance of an estimator? Given a dataset X, Y there should be a unique, best set of betas...
-
 # PUT SOMEWHERE
 
 ## Regularization methods
