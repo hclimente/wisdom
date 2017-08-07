@@ -110,4 +110,4 @@ Google: Bayes factor, model evidence.
 
 ## Sources
 
-* [Critical Review and Comparison of Variable Selection Procedures for Linear Regression](http://sites.stat.psu.edu/~jdziak/classical.pdf)
+* Dziak, J., Li, R., & Collins, L. (2005). Critical Review and Comparison of Variable Selection Procedures for Linear Regression, 1–69.

@@ -30,7 +30,8 @@ Articles marked with (Draft!) are articles taken on the fly on talks. Dirty, inc
 ## Model selection
 
 * [Hyperparameter optimization](notes/machine_learning/hyperparameter_optimization.md)
-* [Model selection measures](notes/machine_learning/model_selection_measures.md)
+* [Model assessment](notes/machine_learning/model_assessment.md)
+* [Model selection](notes/machine_learning/model_selection.md)
 * [Feature selection](notes/machine_learning/feature_selection.md)
 
 ## Networks
