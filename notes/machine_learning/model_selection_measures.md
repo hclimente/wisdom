@@ -67,12 +67,11 @@ that the population or process from which the data was sampled is governed
 by an unknown, perhaps nonparametric, true likelihood function $f(X,y)$,
 and we want to approximate the unknown $f$ by a model-specific parametric
 likelihood $g(X,y|θ)$. The “discrepancy” between $f$ and $g$, or “information lost”
-by representing $f$ by $g$, is defined as
-> $$KL(f, g) = E(\ln f(x))− E(\ln g(X,y|θ))$$
+by representing $f$ by $g$, is defined as $KL(f, g) = E(\ln f(x))− E(\ln g(X,y|θ)).$
 
-$E(lnf(x))$ is unknown and the same for all the models being compared, so we really only care about $E(\ln g(X,y|θ))$. It must be adjusted by the fact that θ is estimated from X and y:
+$E(ln f(x))$ is unknown and the same for all the models being compared, so we really only care about $E(\ln g(X,y\|θ))$. It must be adjusted by the fact that θ is estimated from X and y:
 
-$$E(\ln g(X,y|θ))=E_yE_x(\ln g(X,y|\hat{\theta}(X,y)))$$
+$$E(\ln g(X,y\|θ))=E_yE_x(\ln g(X,y\|\hat{\theta}(X,y)))$$
 
 Akaike showed that a good estimator for this term is $L(X,y,\hat{\theta})-p_{in}$. Hence the best model should minimize this function:
 
@@ -86,11 +85,11 @@ $$AIC_c=AIC+\dfrac{2p_{in}(p_{in}+1)}{n−p_{in}−1}=-2L(X,y,\hat{\theta})+2(\d
 
 The Bayesian Information Criterion (BIC) assumes that the true model is present among the models. It tries to find it looking for the most probable model given the data:
 
-$$Pr(M_i|x,y)=Pr(M_i)Pr(y|x,M_i)$$
+$$Pr(M_i\|x,y)=Pr(M_i)Pr(y\|x,M_i)$$
 
-Assuming equal priors (ie ignorance), $Pr(M_i|x,y)\propto Pr(y|x,M_i)$ and $Pr(y|x,M_i)$ can be well approximated by $exp(1/2BIC)$, where
+Assuming equal priors (ie ignorance), $Pr(M_i\|x,y)\propto Pr(y\|x,M_i)$ and $Pr(y\|x,M_i)$ can be well approximated by $exp(1/2BIC)$, where
 
-$$BIC=−2L(y|x,\hat{\theta}_{M_i})−ln(n)(p_{in}+ 2)$$
+$$BIC=−2L(y\|x,\hat{\theta}_{M_i})−ln(n)(p_{in}+ 2)$$
 
 > $(p_{in}+ 2)$ is the number of parameters in the model, including the intercept and variance. Thus if we want to choose the model with the highest posterior probability, we need only choose the one with lowest BIC. Classically, $n$ here is the number of subjects and is thought to represent the amount of information in the sample.
 
