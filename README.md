@@ -2,7 +2,7 @@
 
 Accumulated knowledge from a life devoted to science. Eternally on-going effort, take with a grain of salt.
 
-Articles marked with (Stub!) are articles taken on the fly on talks. Dirty, incomplete sketches. Please ignore unless you lost all hope in any other source.
+Articles marked with (Draft!) are articles taken on the fly on talks. Dirty, incomplete sketches. Please ignore unless you lost all hope in any other source.
 
 # Biology
 
@@ -10,22 +10,21 @@ Articles marked with (Stub!) are articles taken on the fly on talks. Dirty, inco
 
 * [Breast cancer](notes/bio/brca.md)
   * [Familial breast cancer](notes/bio/familial_brca.md)
-* [(Stub!) Genetics of cancer](notes/bio/cancer_genetics.md)
+* [(Draft!) Genetics of cancer](notes/bio/cancer_genetics.md)
 
 ## Genetics
 
-* [(Stub!) Epistasis](notes/bio/epistasis.md)
+* [(Draft!) Epistasis](notes/bio/epistasis.md)
 * [Genome-wide Association Studies](notes/bio/gwas.md)
 * [Heritability](notes/bio/heritability.md)
 * [Population structure](notes/bio/population_structure.md)
-* [(Stub!) RNAseq](notes/bio/rnaseq.md)
+* [(Draft!) RNAseq](notes/bio/rnaseq.md)
 
 # Machine learning
 
-* [(Stub!)Deep learning](notes/machine_learning/deep_learning.md)
-* [(Stub!) Independent component analysis](notes/data_analysis/independent_component_analysis.md)
-* [(Stub!) Linear models](notes/machine_learning/linear_models.md)
-* [(Stub!) Linear regression](notes/machine_learning/linear_regression.md)
+* [(Draft!) Deep learning](notes/machine_learning/deep_learning.md)
+* [(Draft!) Independent component analysis](notes/data_analysis/independent_component_analysis.md)
+* [(Draft!) Linear models](notes/machine_learning/linear_regression.md)
 * [Glossary of Maths things](notes/machine_learning/glossary.md)
 
 ## Model selection
