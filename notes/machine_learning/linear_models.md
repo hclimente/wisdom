@@ -103,11 +103,33 @@ There are two main reservations about least squares estimates. The first one is 
 
 # Subset selection
 
-Here we present methods that couple variable *subset selection* with linear regression:
+Some methods couple variable *subset selection* to the linear regression, discarding input variables:
 
 - Best-subset selection: finds, for each $k \in \{0,1,...,p\}$ the subset of $k$ variables that gives the smallest residual sum of squares. Choosing $k$ is not trivial; usually the one that minimizes the estimate of the expected predicted error. There is an obvious computational burden, and when $p>40$ this approach becomes unfeasible.
 - Forward- and backward-stepwise selection: these are heuristic approaches to the problem of subset selection with high $p$. In forward-stepwise selection we start with an intercept at $\bar y$, and sequentially add the variable that best improves the fit. In the other end, backward-stepwise selection starts with the full model, and sequentially deletes the predictor that has least impact on the fit. In both cases, we end up with a sequence of models of different sizes $k$ that we need to study.
 - Forward stagewise selection: it also starts with the intercept, and iteratively, finds the variable most correlated with the current residual. Then, it fits a linear regression of the residual to this variable and the coefficient is added to the model. As opposed to forward-stepwise selection, the coefficients of the rest of the variables are not changed when a new one is added. These steps are repeated until no more variables are correlated with the residuals. Forward stagewise selection is slower, but might present advantages in high dimensional settings.
+
+However, those methods often exhibit high variance and do not reduce prediction error.
+
+# Shrinkage methods
+
+## Ridge regression
+
+Ridge regression shrinks the regression coefficients by imposing a penalty on their size:
+
+$$\hat \beta^{ridge}=arg \min_\beta \{\sum_{i=1}^N(y_i-\beta_0-\sum_{j=1}^px_{ij}\beta_j)^2+\lambda \sum_{j=1}^p \beta_j^2\}$$
+
+where $\lambda\geq0$ is the complexity parameter that controls the size of the model: the larger $\lambda$, the greater the shrinkage, the higher the tendency of the coefficients towards zero. Note that the intersection $\beta_0$ is left out of the penalty term. A more explicit way of displaying the size constraint is
+
+$$\hat \beta^{ridge}=arg \min_\beta \sum_{i=1}^N(y_i-\beta_0-\sum_{j=1}^px_{ij}\beta_j)^2$$
+
+subject to $\sum_{j=1}^p\beta_j^2\leq t$. Rewriting it in matrix form we can see the ridge regression solutions:
+
+$$RSS(\lambda) = (\textbf y - \textbf X \beta)^T(\textbf y - \textbf X \beta) + \lambda \beta^T \beta$$
+
+$$\hat \beta_{ridge} = (\textbf X^T \textbf X + \lambda \textbf I)^{-1} \textbf X^T \textbf y$$
+
+where $\textbf I$ is the $p \times p$ identity matrix.
 
 # PUT SOMEWHERE
 
@@ -118,8 +140,6 @@ Several regularization methods have been proposed for ill-posed problems i.e. th
 * A solution exists
 * The solution is unique
 * The solution's behavior changes continuously with the initial conditions.
-
-### Ridge regression
 
 # Fitting a logistic reg through an iterative solution
 
