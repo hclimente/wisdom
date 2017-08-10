@@ -1,3 +1,21 @@
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 # Univariate tests
 
 Standard GWAS involves a univariate test under an additive genetic model (Lee *et al.*, 2014), typically linear and logistic regressions, for continuous and discrete traits respectively. A significant threshold of $5 \times 10^{-8}$ is required, corresponding to a conservative Bonferroni correction.
