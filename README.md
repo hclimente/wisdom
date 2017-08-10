@@ -16,6 +16,7 @@ Articles marked with (Draft!) are articles taken on the fly on talks. Dirty, inc
 
 * [(Draft!) Epistasis](notes/bio/epistasis.md)
 * [Genome-wide Association Studies](notes/bio/gwas.md)
+  * [Association measures](notes/machine_learning/association_measures.md)
 * [Heritability](notes/bio/heritability.md)
 * [Population structure](notes/bio/population_structure.md)
 * [(Draft!) RNAseq](notes/bio/rnaseq.md)
