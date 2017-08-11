@@ -18,7 +18,28 @@
 
 # Univariate tests
 
-Standard GWAS involves a univariate test under an additive genetic model (Lee *et al.*, 2014), typically linear and logistic regressions, for continuous and discrete traits respectively. A significant threshold of $5 \times 10^{-8}$ is required, corresponding to a conservative Bonferroni correction.
+Despite GWAS being the approach for the study of complex, polygenic diseases, the *de facto* approach for its statistical analysis has consisted on univariate analysis, one variant at a time.
+
+## Univariate regression
+
+Standard GWAS involves a univariate test under an additive genetic model (Lee *et al.*, 2014), typically linear and logistic regressions, for continuous and discrete traits respectively. We sequence the $m$ variants from the region of interest in $n$ subjects. A subject $i$ has a phenotype $y_i$, coming from a distribution with mean $\mu_i$, a covariate vector $e_i = (e_{i1}, ..., e_{iq})^T$ and a genotype $x_i = (x_{i1}, ..., x_{im})^T$ where $x_{i1}$ is the allele count for variant 1. If $y_i$
+ follows a distribution in the quasi-likelihood family and we use the generalized linear model
+
+$$\eta_i = \alpha_0+\alpha^Te_i+\beta^Tx_i.$$
+
+Then $\eta_i$ is transformed into a $\mu_i$ using a *link function*: $\mu = \eta$ for a continuous trait, and $\mu = logit(\eta)$ for a binary trait. We define the score statistic of the marginal model for variant $j$ as
+
+$$S_j=\sum_{i=1}^nx_{ij}(y_i-\hat \mu_i)$$
+
+where $\hat \mu_i$ is the estimated mean of $y_i$ under the null hypothesis $\beta = 0$. $S_j > 0$ when the variant $j$ is associated with increased trait values; $S_j < 0$ when variant $j$ is associated with decreased trait values.
+
+A significant threshold of $5 \times 10^{-8}$ is required, corresponding to a conservative Bonferroni correction.
+
+Univariate regression allows testing the associations of using all the observations, is computationally simple, and avoids problems with partial correlations due to linkage disequilibrium (Sabatti, 2013). However, they also present several drawbacks. There might be a hidden population structure in the data, noticeable looking at all the SNPs at a time, but not looking at them individually. In consequence, there might be a hidden correlation between the tests results, which lead to an inappropriate evaluation of the $\beta_j$. Also, the low power common in GWAS studies is exacerbated when studying rare alleles (Lee *et al.*, 2014).
+
+## Contingency tables
+
+# Multivariate regression
 
 # Aggregation tests
 
@@ -26,26 +47,11 @@ Aggregation tests do not test variants individually, they measure the cumulative
 
 There are many different aggregation tests, which make different assumptions about the genetic model of the phenotype.
 
----
-
-We sequence the $m$ variants from the region of interest in $n$ subjects. A subject $i$ has a phenotype $y_i = \mu_i + \varepsilon$, a covariate vector $x_i = (x_{i1}, ..., x_{iq})^T$ and a genotype $g_i = (g_{i1}, ..., g_{im})^T$ where $g_{i1}$ is the allele count for variant 1. If $y_i$
- follows a distribution in the quasi-likelihood family and we use the generalized linear model
-
-$$h(\mu_i) = \alpha_0+\alpha^Tx_i+\beta^Tg_i$$
-
-where $h(\mu) = \mu$ for a continuous trait, $h(\mu)=logit(\mu)$ for a binary trait. We define the score statistic of the marginal model for variant $j$ as
-
-$$S_j=\sum_{i=1}^nG_{ij}(y_i-\hat \mu_i)$$
-
-where $\hat \mu_i$ is the estimated mean of $y_i$ under the null hypothesis $\beta = 0$. $S_j > 0$ when the variant $j$ is associated with increased trait values; $S_j < 0$ when variant $j$ is associated with decreased trait values.
-
----
-
 ## Burden tests
 
 Burden tests collapse information of multiple genetic variants into a single genetic score, then test the association between this score and the trait (Lee *et al.*, 2014). Some of them use the regression framework. In those, the summary genetic score is
 
-$$C_i = \sum_{j=1}^m w_j g_{ij}$$
+$$C_i = \sum_{j=1}^m w_j x_{ij}$$
 
 where $w_j$ is a weight for variant $j$. It can be discrete (e.g. $w_j = \textbf 1_{MAF_j}\{MAF_j < 0.05\}$) or continuous (e.g. $w_j = \frac{1}{[MAF_j(1 - MAF_j)]^{1/2}}$). The corresponding score statistic to test the null hypothesis is
 
@@ -90,5 +96,9 @@ It is more powerful than the previously presented when only a small fraction of 
 
 # References
 
+* Bush, W. S., & Moore, J. H. (2012). Chapter 11: Genome-wide association studies. PLoS Computational Biology, 8(12), e1002822. https://doi.org/10.1371/journal.pcbi.1002822
 * Lee, S., Abecasis, G. R., Boehnke, M., & Lin, X. (2014). Rare-variant association analysis: study designs and statistical tests. American Journal of Human Genetics, 95(1), 5–23. https://doi.org/10.1016/j.ajhg.2014.06.009
+* Sabatti, C. (2013). Multivariate Linear Models for GWAS. Advances in Statistical Bioinformatics Models and Integrative Inference for High-Throughput Data, (Cambridge University Press), 188–207.
 * Wu, M. C., Lee, S., Cai, T., Li, Y., Boehnke, M., & Lin, X. (2011). Rare-Variant Association Testing for Sequencing Data with the Sequence Kernel Association Test. The American Journal of Human Genetics, 89(1), 82–93. https://doi.org/10.1016/j.ajhg.2011.05.029
+* Wikipedia
+  * [Generalized linear model](https://en.wikipedia.org/wiki/Generalized_linear_model)
