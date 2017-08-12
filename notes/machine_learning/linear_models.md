@@ -31,21 +31,21 @@ The most common method to estimate $\beta$ from the training data is the **least
 
 $$RSS(\beta)=\sum_{i=1}^N(y_i-f(x_i))^2=\sum_{i=1}^N(y_i-\beta_0-\sum_{j=1}^px_{ij}\beta_j)^2.$$
 
-We can rewrite it in matrix form as
+RSS has two crucial properties worth expliciting. First, squaring the differences ignores the direction of the differences, and hence negative differences cannot offset positive diferences. Second, the square assigns a higher importance to big errors. We can rewrite RSS in matrix form as
 
 $$RSS(\beta)=(\textbf{y}-\textbf{X}\beta)^T(\textbf{y}-\textbf{X}\beta).$$
 
-Differentiating this quadratic function with respect to $\beta$
+To minimize RSS, we differentiate this quadratic function with respect to $\beta$
 
 $$\frac {\partial RSS}{\partial \beta} = -2\textbf X^T(\textbf y-\textbf X \beta)$$
 
-$$\frac {\partial^2 RSS}{\partial \beta} = 2 \textbf X^T \textbf X.$$
+$$(\frac {\partial^2 RSS}{\partial \beta} = 2 \textbf X^T \textbf X)$$
 
-Assuming $\textbf X$ has full column rank, and hence $\textbf X^T\textbf X$ is [positive definite](glossary.md), we set the first derivative to zero
+and, assuming $\textbf X$ has full column rank and hence $\textbf X^T\textbf X$ is [positive definite](glossary.md), we set the first derivative to zero
 
-$$\textbf X^T(\textbf y-\textbf X\beta)=0$$
+$$\textbf X^T(\textbf y-\textbf X\beta)=0.$$
 
-and obtain the unique solution
+This allows to obtain a unique solution
 
 $$\hat \beta = (\textbf X^T \textbf X)^{-1}\textbf X^T \textbf y$$
 
