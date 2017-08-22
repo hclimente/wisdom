@@ -8,15 +8,37 @@ The basic structure of the directory is as follows:
 * NAMESPACE
 * R
 * man
-* [vignettes]
+* vignettes
 
 ## DESCRIPTION
 
 [DESCRIPTION](http://r-pkgs.had.co.nz/description.html) is the file that contains the important metadata of the package.
 
-## vignettes
+R packages listed in either `Imports` and `Depends` ensures that the package is installed. However, there is a difference: `Imports` loads the package; `Depends` attaches it. Loading a package will load the code, data and dynamic libraries, register S3 and S4 methods, and run .onLoad(); all of this without putting the package in the search path, so it will not be usable without ::. Attaching it will actually put the package in the search path. Usually packages should always be self-contained, minimizing the changes on the global environment, and hence be listed under `Imports`.
 
+## NAMESPACE
 
+When a function is called, R has to locate the object associated to that name. First, R searches the global environment. If unsuccessful, it checks the search path i.e. the list of all the *attached* packages.  The namespace of a package provides a context where to look for the object associated with a name. They are recorded in the [NAMESPACE](http://r-pkgs.had.co.nz/namespace.html) file. A correct organization of the NAMESPACE file will contain the package. There are two questions to consider, imports and exports:
+
+- Imports define how a function in one package finds a function from another package.
+  - export() to export functions.
+  - exportPattern() to export all functions matching a pattern.
+  - exportClasses() and exportMethods() to export S4 classes and methods.
+  - S3method() to export S3 methods.
+
+- Exports define which functions are available outside of a package.
+  - import() to import all functions from a package.
+  - importFrom() to import selected functions.
+  - importClassesFrom() and importMethodsFrom() to import S4 classes and methods.
+  - useDynLib() to import a function from C.
+
+### NAMESPACE in roxygen2
+
+Hadley recommends letting roxygen2 the trouble of writing the NAMESPACE:
+
+- `#' @export` will export an object from our package.
+- `#' @import methods`
+- `##' @importFrom package function` imports a function from a package.
 
 # Testing
 
