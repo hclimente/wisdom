@@ -25,7 +25,7 @@ Articles marked with (Draft!) are articles taken on the fly on talks. Dirty, inc
 
 * [(Draft!) Deep learning](notes/machine_learning/deep_learning.md)
 * [(Draft!) Independent component analysis](notes/data_analysis/independent_component_analysis.md)
-* [(Draft!) Graphical models](notes/data_analysis/graphical models.md)
+* [(Draft!) Graphical models](notes/machine_learning/graphical models.md)
 * [(Draft!) Linear models](notes/machine_learning/linear_models.md)
 * [Set covering machines](notes/machine_learning/set_covering_machine.md)
 * [Glossary of Maths things](notes/machine_learning/glossary.md)
