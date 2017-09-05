@@ -53,7 +53,7 @@ Burden tests collapse information of multiple genetic variants into a single gen
 
 $$C_i = \sum_{j=1}^m w_j x_{ij}$$
 
-where $w_j$ is a weight for variant $j$. It can be discrete (e.g. $w_j = \textbf 1_{MAF_j}\{MAF_j < 0.05\}$) or continuous (e.g. $w_j = \frac{1}{[MAF_j(1 - MAF_j)]^{1/2}}$). The corresponding score statistic to test the null hypothesis is
+where $w_j$ is a weight for variant $j$. It can be discrete (e.g. $w_j = \textbf 1_{MAF_j}\{MAF_j < 0.05\}$) or continuous (e.g. $w_j = \frac{1}{\sqrt{MAF_j(1 - MAF_j)}}$). The corresponding score statistic to test the null hypothesis is
 
 $$Q_{burden}=(\sum_{j=1}^m w_j S_j)^2.$$
 
