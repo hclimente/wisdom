@@ -62,3 +62,23 @@ function tgrep {
 	head -n1 $f
 	grep $@
 }
+
+function enable_proxy {
+
+	export http_proxy=http://www-cache.curie.fr:3128
+	export HTTP_PROXY=http://www-cache.curie.fr:3128
+	export https_proxy=http://www-cache.curie.fr:3128
+	export ftp_proxy=http://www-cache.curie.fr:3128
+	export no_proxy=localhost,127.0.0.0/8,127.0.1.1,127.0.1.1*,local.home,127.0.0.1
+
+}
+
+function disable_proxy {
+
+        export http_proxy=""
+        export HTTP_PROXY=""
+        export https_proxy=""
+        export ftp_proxy=""
+        export no_proxy=""
+
+}
