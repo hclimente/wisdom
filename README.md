@@ -1,3 +1,9 @@
+---
+permalink: /wisdom/
+title: Wisdom
+layout: single
+---
+
 # wisdom
 
 Accumulated knowledge from a life devoted to science. Eternally on-going effort, take with a grain of salt.
