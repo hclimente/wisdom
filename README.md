@@ -47,16 +47,25 @@ Articles marked with (Draft!) are articles taken on the fly on talks. Dirty, inc
 
 * [Network-based biomarker discovery](notes/bio/systems_biology.md)
 
-# Software
+# Computers
+
+## Programming
+
+* [C++](notes/software/cpp.md)
+* [R packages](notes/software/rpackages.md)
+
+## Software
 
 * [Atom](notes/software/atom.md)
-* [C++](notes/software/cpp.md)
 * [Git](notes/software/git.md)
 * [Jupyter](notes/software/jupyter.md)
-* [R packages](notes/software/rpackages.md)
+* [Zsh](notes/software/zsh.md)
+
+## Technologies
+
+* [Beautiful things](notes/software/beautiful_things.md)
 * [SSH](notes/software/ssh.md)
 * [Testing](notes/software/testing.md)
-* [Zsh](notes/software/zsh.md)
 
 # Snippets
 
