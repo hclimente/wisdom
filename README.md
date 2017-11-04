@@ -23,6 +23,7 @@ Articles marked with (Draft!) are articles taken on the fly on talks. Dirty, inc
 * [(Draft!) Epistasis](notes/bio/epistasis.md)
 * [Genome-wide Association Studies](notes/bio/gwas.md)
   * [Association measures](notes/machine_learning/association_measures.md)
+	* [Network-based GWAS](notes/bio/gwas_systems_biology.md)
 * [Heritability](notes/bio/heritability.md)
 * [Population structure](notes/bio/population_structure.md)
 * [(Draft!) RNAseq](notes/bio/rnaseq.md)
@@ -36,16 +37,18 @@ Articles marked with (Draft!) are articles taken on the fly on talks. Dirty, inc
 * [Set covering machines](notes/machine_learning/set_covering_machine.md)
 * [Glossary of Maths things](notes/machine_learning/glossary.md)
 
+## Data mining
+
+Notes from [Mining of Massive Datasets](http://www.mmds.org/).
+
+* [Measuring similarity](notes/data_analysis/distances.md)
+
 ## Model selection
 
 * [Hyperparameter optimization](notes/machine_learning/hyperparameter_optimization.md)
 * [Model assessment](notes/machine_learning/model_assessment.md)
 * [Model selection](notes/machine_learning/model_selection.md)
 * [Feature selection](notes/machine_learning/feature_selection.md)
-
-## Networks
-
-* [Network-based biomarker discovery](notes/bio/systems_biology.md)
 
 # Computers
 

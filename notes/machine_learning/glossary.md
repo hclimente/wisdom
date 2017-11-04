@@ -16,6 +16,10 @@
         src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
+# Bijection
+
+A bijection, bijective function or one-to-one correspondence is a function between the elements of two sets, where each element of one set is paired with exactly one element of the other set, and each element of the other set is paired with exactly one element of the first set ([Wikipedia](https://en.wikipedia.org/wiki/Bijection)).
+
 # Indicator function
 
 An indicator function or a characteristic function is a function defined on a set X that indicates membership of an element in a subset A of X, having the value 1 for all elements of A and the value 0 for all elements of X not in A ([Wikipedia](https://en.wikipedia.org/wiki/Indicator_function)).
@@ -53,6 +57,10 @@ Given an undirected graph $G=(V,E)$, a set of random variables $X = (X_v)_{v\in 
   $$X_A \perp\!\!\!\perp X_B \mid X_S$$
 
   where every path from a node in $A$ to a node in $B$ passes through $S$.
+
+# Monotonic function
+
+A monotonic function is a function between ordered sets (such as real numbers) that preserves of reverses the given order ([Wikipedia](https://en.wikipedia.org/wiki/Monotonic_function)).
 
 # Positive definite matrix
 

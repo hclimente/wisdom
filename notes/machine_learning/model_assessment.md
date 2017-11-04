@@ -87,6 +87,14 @@ When BIC and AIC agree, we can be confident about our model. When they do not, i
 * High $n$: BIC is usually preferred: BIC has a stricter selection criteria, and tends to pick smaller models, while AIC tends to overfit. Additionally BIC is a consistent model selection criteria: if the number of models is finite and the true one is among them, the probability of detecting it approaches 1 as $n$ tends to infinite.
 * Small $n$: with the rather modest sample sizes we usually work with, BIC tends to underfit. Also, this nice asymptotic property is based on unrealistic assumptions. In those cases, AIC or AIC<sub>c</sub> are recommended.
 
+### Modifications of BIC
+
+These criteria were based on the assumption that as the sample size $n$ goes to infinity, the total number of available regressors $p$ remains constant (Żak-Szatkowska & Bogdan, 2011). Therefore, they might not be appropriate if $p$ is comparable or larger than $n$, as it happens in GWAS. For example, in QTL mapping studies it was shown that BIC leads to an overestimation of the numbers of regressors. Several modifications have been proposed to tackle this problem:
+
+- EBIC and mBIC include prior distributions on the model size: uniform and binomial respectively.
+
+When it is assumed that only a small subset of $p$ is explanatory, usually a sparsity is more enforced.
+
 ## Adaptative model selections
 
 The $\lambda$ factor is a data-adaptive penalty derived using the generalized degrees of freedom for a given modeling procedure.
@@ -98,3 +106,4 @@ Google: Bayes factor, model evidence.
 ## Sources
 
 * Dziak, J., Li, R., & Collins, L. (2005). Critical Review and Comparison of Variable Selection Procedures for Linear Regression, 1–69.
+* Żak-Szatkowska, M., & Bogdan, M. (2011). Modified versions of the Bayesian Information Criterion for sparse Generalized Linear Models. Computational Statistics & Data Analysis, 55(11), 2908–2924. https://doi.org/10.1016/j.csda.2011.04.016

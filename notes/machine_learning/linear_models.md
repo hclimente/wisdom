@@ -131,6 +131,16 @@ $$\hat \beta_{ridge} = (\textbf X^T \textbf X + \lambda \textbf I)^{-1} \textbf 
 
 where $\textbf I$ is the $p \times p$ identity matrix.
 
+# Generalized linear models
+
+Generalized linear models (GLM) are a sub-family of generalized additive models, which take the following form
+
+$$E(Y|X_1,...,X_p)=\alpha+f_1(X_1)+...+f_p(X_p)$$
+
+where the $f_j$'s are unspecified smooth ("nonparametric") functions which we will estimate simultaneously. The conditional mean $\mu(X)$ (e.g. $\mu(X)=P(Y=1|X)$ for a binary reponse) is relaed to the additive function of the predictors via a link function $g$:
+
+$$g[\mu(X)] = \alpha + f_1(X_1) + ... + f_p(X_p).$$
+
 # PUT SOMEWHERE
 
 ## Regularization methods

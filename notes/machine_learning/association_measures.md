@@ -22,8 +22,7 @@ Despite GWAS being the approach for the study of complex, polygenic diseases, th
 
 ## Univariate regression
 
-Standard GWAS involves a univariate test under an additive genetic model (Lee *et al.*, 2014), typically linear and logistic regressions, for continuous and discrete traits respectively. We sequence the $m$ variants from the region of interest in $n$ subjects. A subject $i$ has a phenotype $y_i$, coming from a distribution with mean $\mu_i$, a covariate vector $e_i = (e_{i1}, ..., e_{iq})^T$ and a genotype $x_i = (x_{i1}, ..., x_{im})^T$ where $x_{i1}$ is the allele count for variant 1. If $y_i$
- follows a distribution in the quasi-likelihood family and we use the generalized linear model
+Standard GWAS involves a univariate test under an additive genetic model (Lee *et al.*, 2014), typically linear and logistic regressions, for continuous and discrete traits respectively. We sequence the $m$ variants from the region of interest in $n$ subjects. A subject $i$ has a phenotype $y_i$, coming from a distribution with mean $\mu_i$, a covariate vector $e_i = (e_{i1}, ..., e_{iq})^T$ and a genotype $x_i = (x_{i1}, ..., x_{im})^T$ where $x_{i1}$ is the allele count for variant 1. If $y_i$ follows a distribution in the quasi-likelihood family and we use the generalized linear model
 
 $$\eta_i = \alpha_0+\alpha^Te_i+\beta^Tx_i.$$
 
