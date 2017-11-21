@@ -1,5 +1,5 @@
 ---
-permalink: ../wisdom/
+permalink: /../wisdom/
 title: Wisdom
 layout: single
 ---
