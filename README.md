@@ -1,5 +1,5 @@
 ---
-permalink: /wisdom/
+permalink: ../wisdom/
 title: Wisdom
 layout: single
 ---
@@ -69,6 +69,10 @@ Notes from [Mining of Massive Datasets](http://www.mmds.org/).
 * [Beautiful things](notes/software/beautiful_things.md)
 * [SSH](notes/software/ssh.md)
 * [Testing](notes/software/testing.md)
+
+# Misc
+
+* [(Draft!) Epistemology](notes/misc/epistemology.md)
 
 # Snippets
 
